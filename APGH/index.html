@@ -1,0 +1,1585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.2/css/font-awesome.css" integrity="sha512-FbCB35B2LfIq25LLPlR+pWejoW1X5uXXZ3XdjiXVtixww/x7KA7k2jZiUIWC+n9qetLeOgCyyR+UKhwLbZLmaQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- NavBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent mx-auto  border-bottom">
+        <div class="container">
+            <!-- Logo -->
+          <a class="navbar-brand" href="#"><img src="img/logo.png" class="navlogo"></a><!--apartmentsGHANA -->
+          <!-- Toggle BTN -->
+          <button class="navbar-toggler shadow-none border-0 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- SideBar -->
+          <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+           <!-- SideBar Header -->
+            <div class="offcanvas-header text-white border-bottom">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">apartmentsGHANA</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <!-- SideBar Body -->
+            <div class="offcanvas-body d-flex flex-column flex-lg-row"> <!--d-flex flex-column flex-lg-row-->
+              <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+                <li class="nav-item mx-2">
+                  <a class="nav-link bold" aria-current="page" href="#">Quick Sell</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link bold" href="#loans">Apartment Loans</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link bold" href="#loans">Agent Finder</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link bold" href="#loans">Contractors</a>
+                </li>
+                <li class="nav-item mx-2">
+                    <a class="nav-link bold" href="#loans">Managed Short Lets</a>
+                </li>
+              </ul>
+              <!-- Login/Register -->
+              <div class="d-flex justify-content-center align-items-center flex-lg-row--" >
+                <a class="nav-link colo" href="#">List Properties for free</a>
+                <!-- <a class="nav-link" href="login"><i class="fa fa-user"i></a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    
+    
+    
+      <!-- DropDown -->
+        <div class="container text">
+          <p class="bold in">Search apartments for sale or to rent in Accra</p>
+            <div class="row">
+               <div class="col-md-2">
+                <!-- <label for="standard-select"></label> -->
+                <div class="select-container">
+                  <select id="select-box">
+                    <option value="Option 1">All Properties</option>
+                    <option value="Option 2">Residential for Rent</option>
+                    <option value="Option 3">Residential for Sale</option>
+                    <option value="Option 4">Residential short Let</option>
+                    <option value="Option 5">Rooms for rent</option>
+                  </select>
+                <!-- <div class="icon-container">
+                  <i class="fa-solid fa-caret-down"></i>
+                </div> -->
+                </div>
+               </div>
+               <div class="col-md-2">
+                <div class="select-container">
+                  <select id="select-box">
+                    <option value="Option 1">Select a City</option>
+                    <option value="Option 2">Accra</option>
+                    <option value="Option 3">Kumasi</option>
+                    <option value="Option 4">Cape Coast</option>
+                    <option value="Option 5">Tema</option>
+                  </select>
+                </div>
+               </div>
+               <div class="col-md-2">
+                <div class="select-container">
+                  <select id="select-box">
+                    <option value="Option 1">Select Area</option>
+                  </select>
+                </div>
+               </div>
+               <div class="col-md-2">
+
+                <div class="select-container">
+                  <select id="select-box">
+                    <option value="Option 1">Select Currency</option>
+                    <option value="Option 2">GH¢</option>
+                    <option value="Option 3">US$</option>
+                  </select>
+                </div>
+               </div>
+               <div class="col-md-2">
+                <!-- <div class="input-group"> -->
+                  <!-- <input type="text" class="form-control first" name="name" placeholder="Search"> -->
+                  <input type="text"  placeholder="Keywords" class="search1">
+                </div>
+                  <div class="col-md-2">
+                  <button class="search_btn">Search</button>
+                  <!-- <span class="input-group-btn"> -->
+                  <!-- <button class="btn btn-default" type="submit" name="submit_signup">Search</button> -->
+                <!-- </div> -->
+               </div>
+
+            </div>
+          </div>
+               
+                
+
+
+      <!-- slider -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-sm-6 col-md-6" style="background-color:none">
+            <h6 class="bold2">Premium Apartments for Rent in Accra</h6>
+            
+            
+            <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active grey" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="img/1935.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-md">
+                    <h5 class="white1">Duplex apartment for rent in Cantoments</h5>
+                     <h5 class="white1">$1,500.00 per month</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/1903.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-md">
+                    <h5 class="white1">1bedroom for rent in Cantoments</h5>
+                     <h5 class="white1">$1,500.00 per month</h5>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="img/32.jpg" class="d-block w-100" alt="...">
+                  <div class="carousel-caption d-md">
+                    <h5 class="white1">Studio apartment for rent in Cantoments</h5>
+                     <h5 class="white1">$1,500.00 per month</h5>
+                  </div>
+                </div>
+              </div>
+              <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button> -->
+              <!-- <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button> -->
+            </div>
+            
+            
+            
+            
+            
+            <!-- <div class="swiper"> -->
+                <!-- Additional required wrapper -->
+                <!-- <div class="swiper-wrapper"> -->
+                  <!-- Slides -->
+                  <!-- <div class="swiper-slide"><img src="img/1935.jpg"></div>
+                  <div class="swiper-slide"><img src="img/1903.jpg"></div>
+                  <div class="swiper-slide"><img src="img/973.jpg"></div>
+                  <div class="swiper-slide"><img src="img/1022.jpg"></div> -->
+                  
+                  <!-- </div> -->
+                <!-- If we need pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+              
+                <!-- If we need navigation buttons -->
+                <!-- <div class="swiper-button-prev"></div> -->
+                <!-- <div class="swiper-button-next"></div>  -->
+              
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div>  -->
+              <!-- </div> -->
+          </div>
+
+
+           <!-- Slider main container -->
+          <div class="col-lg-4 col-sm-6" style="background-color:none">
+            <h6 class="bold">Premium Apartments for Sale in Accra</h6>
+            <img src="img/973.jpg" class="imgtest" style="width:100%; height: 95%;">
+          </div>
+        </div>
+      </div>
+      <script src="/css/js/script.js"></script>
+     
+      
+<div class="container">
+  <div class="row gx-5">
+    <div class=" col-md-4">
+      <div class="list_box">
+        <img src="img/1903.png">
+        <div class="logo_left"><img src="img/Profile Picture (5).jpg" class="fluid"></div>
+        <div class="price_neg"><span class="green">Price Negotiatable</span></div>
+         <div class="list_dets">
+           <div class="listsec1">
+             <div class="list_name">
+               <span> Dennis Doherty</span>
+               <p>Labone</p>
+             </div>
+             <div class="price_list">
+               <span>$1,400.00 per month</span>
+               <p>Residential for rent</p>
+             </div>
+           </div>
+           <div class="listsec2">
+             <ul class="list_addy">
+             <li>51 Ndabaningi Sithole Rd, Labone, Accra</li>
+             <li><i class="fa fa-heart-o"></i></li>
+             </ul>
+           </div>
+           <div class="listsec3">
+             <ul class="list_addy">
+               <li>Apartment in Labone</li>
+             </ul>
+             <ul class="pl_right_icon">
+               <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_874_.png">3</li>
+               <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_2186_.png">2</li>
+               <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/drive.png">1</li>
+             </ul>
+           </div>
+         </div>
+       </div>
+    </div>
+
+    <div class="col-lg-4">
+    <div class="list_box">
+      <img src="img/1935.jpg">
+      <div class="logo_left"><img src="img/Profile Picture (5).jpg" class="fluid"></div>
+      <div class="price_neg"><span class="green">Price Negotiatable</span></div>
+       <div class="list_dets">
+         <div class="listsec1">
+           <div class="list_name">
+             <span> Dennis Doherty</span>
+             <p>Labone</p>
+           </div>
+           <div class="price_list">
+             <span>$1,400.00 per month</span>
+             <p>Residential for rent</p>
+           </div>
+         </div>
+         <div class="listsec2">
+           <ul class="list_addy">
+           <li>51 Ndabaningi Sithole Rd, Labone, Accra</li>
+           <li><i class="fa fa-heart-o"></i></li>
+           </ul>
+         </div>
+         <div class="listsec3">
+           <ul class="list_addy">
+             <li>Apartment in Labone</li>
+           </ul>
+           <ul class="pl_right_icon">
+             <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_874_.png">3</li>
+             <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_2186_.png">2</li>
+             <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/drive.png">1</li>
+           </ul>
+         </div>
+       </div>
+     </div>
+    </div>
+
+    <div class="col-lg-4">
+      <img src="img/home_right_one_ads_image.jpg">
+    </div>
+ </div> 
+
+  
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row gx-8">
+    <div class="col-lg-4">
+      <div class="list_box">
+        <img src="img/32.jpg">
+        <div class="logo_left"><img src="img/Profile Picture (5).jpg" class="fluid"></div>
+        <div class="price_neg"><span class="green">Price Negotiatable</span></div>
+         <div class="list_dets">
+           <div class="listsec1">
+             <div class="list_name">
+               <span> Dennis Doherty</span>
+               <p>Labone</p>
+             </div>
+             <div class="price_list">
+               <span>$1,400.00 per month</span>
+               <p>Residential for rent</p>
+             </div>
+           </div>
+           <div class="listsec2">
+             <ul class="list_addy">
+             <li>51 Ndabaningi Sithole Rd, Labone, Accra</li>
+             <li><i class="fa fa-heart-o"></i></li>
+             </ul>
+           </div>
+           <div class="listsec3">
+             <ul class="list_addy">
+               <li>Apartment in Labone</li>
+             </ul>
+             <ul class="pl_right_icon">
+               <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_874_.png">3</li>
+               <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_2186_.png">2</li>
+               <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/drive.png">1</li>
+             </ul>
+           </div>
+         </div>
+       </div>
+    </div>
+
+    <div class="col-lg-4">
+    <div class="list_box">
+      <img src="img/1903.png">
+      <div class="logo_left"><img src="img/Profile Picture (5).jpg" class="fluid"></div>
+      <div class="price_neg"><span class="green">Price Negotiatable</span></div>
+       <div class="list_dets">
+         <div class="listsec1">
+           <div class="list_name">
+             <span> Dennis Doherty</span>
+             <p>Labone</p>
+           </div>
+           <div class="price_list">
+             <span>$1,400.00 per month</span>
+             <p>Residential for rent</p>
+           </div>
+         </div>
+         <div class="listsec2">
+           <ul class="list_addy">
+           <li>51 Ndabaningi Sithole Rd, Labone, Accra</li>
+           <li><i class="fa fa-heart-o"></i></li>
+           </ul>
+         </div>
+         <div class="listsec3">
+           <ul class="list_addy">
+             <li>Apartment in Labone</li>
+           </ul>
+           <ul class="pl_right_icon">
+             <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_874_.png">3</li>
+             <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_2186_.png">2</li>
+             <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/drive.png">1</li>
+           </ul>
+         </div>
+       </div>
+     </div>
+    </div>
+
+    <div class="col-lg-4 gx-5">
+      <img src="img/home_right_two_ads_image.jpg" class="Rigth">
+    </div>
+ </div> 
+
+  
+  </div>
+</div>
+
+<!-- find professional -->
+<div class="container">
+  <h4 class="section-h">Find professionally managed apartments in Accra</h4>
+  <p class="pclass">Finding an apartment to rent in Accra doesn't have to be a hassle. With Apartments.com.gh, you can quickly and easily find a professionally managed apartment that fits your needs and budget. Whether you're looking for a one-bedroom or studio, we have something for everyone. Plus, our search filters make finding the perfect place easy. So why wait? Start your search today! </p>
+<div class="row">
+  <div class="col-md-4"> <div class="list_box">
+    <img src="img/1903.png">
+    <div class="logo_left "><img src="img/Profile Picture (5).jpg" class="fluid"></div>
+    <div class="price_neg"><span class="green">Price Negotiatable</span></div>
+     <div class="list_dets">
+       <div class="listsec1">
+         <div class="list_name">
+           <span> Dennis Doherty</span>
+           <p>Labone</p>
+         </div>
+         <div class="price_list">
+           <span>$1,400.00 per month</span>
+           <p>Residential for rent</p>
+         </div>
+       </div>
+       <div class="listsec2">
+         <ul class="list_addy">
+         <li>51 Ndabaningi Sithole Rd, Labone, Accra</li>
+         <li><i class="fa fa-heart-o"></i></li>
+         </ul>
+       </div>
+       <div class="listsec3">
+         <ul class="list_addy">
+           <li>Apartment in Labone</li>
+         </ul>
+         <ul class="pl_right_icon">
+           <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_874_.png">3</li>
+           <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_2186_.png">2</li>
+           <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/drive.png">1</li>
+         </ul>
+       </div>
+     </div>
+   </div></div>
+  <div class="col-md-4">
+    <div class="list_box">
+    <img src="img/23.jpg">
+    <div class="logo_left"><img src="img/Profile Picture (5).jpg" class="fluid"></div>
+    <div class="price_neg"><span class="green">Quick Deal</span></div>
+     <div class="list_dets">
+       <div class="listsec1">
+         <div class="list_name">
+           <span> Dennis Doherty</span>
+           <p>Labone</p>
+         </div>
+         <div class="price_list">
+           <span>$1,400.00 per month</span>
+           <p>Residential for rent</p>
+         </div>
+       </div>
+       <div class="listsec2">
+         <ul class="list_addy">
+         <li>51 Ndabaningi Sithole Rd, Labone, Accra</li>
+         <li><i class="fa fa-heart-o"></i></li>
+         </ul>
+       </div>
+       <div class="listsec3">
+         <ul class="list_addy">
+           <li>Apartment in Labone</li>
+         </ul>
+         <ul class="pl_right_icon">
+           <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_874_.png">3</li>
+           <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_2186_.png">2</li>
+           <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/drive.png">1</li>
+         </ul>
+       </div>
+     </div>
+   </div></div>
+  <div class="col-md-4"><img src="img/wigmorehoslsale.gif" class="wigmore"></div>
+</div>
+<div class="row">
+  <div class="col-md-4"> <div class="list_box">
+    <img src="img/1903.png">
+    <div class="logo_left"><img src="img/Profile Picture (5).jpg" class="fluid"></div>
+    <div class="price_neg"><span class="green">Quick Deal</span></div>
+     <div class="list_dets">
+       <div class="listsec1">
+         <div class="list_name">
+           <span> Dennis Doherty</span>
+           <p>Labone</p>
+         </div>
+         <div class="price_list">
+           <span>$1,400.00 per month</span>
+           <p>Residential for rent</p>
+         </div>
+       </div>
+       <div class="listsec2">
+         <ul class="list_addy">
+         <li>51 Ndabaningi Sithole Rd, Labone, Accra</li>
+         <li><i class="fa fa-heart-o"></i></li>
+         </ul>
+       </div>
+       <div class="listsec3">
+         <ul class="list_addy">
+           <li>Apartment in Labone</li>
+         </ul>
+         <ul class="pl_right_icon">
+           <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_874_.png">3</li>
+           <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_2186_.png">2</li>
+           <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/drive.png">1</li>
+         </ul>
+       </div>
+     </div>
+   </div></div>
+  <div class="col-md-4">
+    <div class="list_box">
+    <img src="img/632.jpg">
+    <div class="logo_left"><img src="img/Profile Picture (5).jpg" class="fluid"></div>
+    <div class="price_neg"><span class="green">Quick Deal</span></div>
+     <div class="list_dets">
+       <div class="listsec1">
+         <div class="list_name">
+           <span> Dennis Doherty</span>
+           <p>Labone</p>
+         </div>
+         <div class="price_list">
+           <span>$1,400.00 per month</span>
+           <p>Residential for rent</p>
+         </div>
+       </div>
+       <div class="listsec2">
+         <ul class="list_addy">
+         <li>51 Ndabaningi Sithole Rd, Labone, Accra</li>
+         <li><i class="fa fa-heart-o"></i></li>
+         </ul>
+       </div>
+       <div class="listsec3">
+         <ul class="list_addy">
+           <li>Apartment in Labone</li>
+         </ul>
+         <ul class="pl_right_icon">
+           <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_874_.png">3</li>
+           <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_2186_.png">2</li>
+           <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/drive.png">1</li>
+         </ul>
+       </div>
+     </div>
+   </div></div>
+  <div class="col-md-4"><img src="img/african_land_banner.gif" class="wigmore"></div>
+</div>
+</div>
+<!-- closed find professional -->
+
+<!-- New Developement -->
+ <div class=" container">
+  <h3 class="section-h">New Developement and Off-plan Appartments for sale in Accra</h3>
+  <p class="pclass">Buy directly from trusted Property Developers in Ghana. Apply for an investment Loan.</p>
+   
+ 
+ <div class="container">
+  </div>
+  <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="card-wrapper">
+        <div class="card" >
+          <div class="img-wrapper">
+          <img src="img/1575.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <div class="price_neg2"><span class="green">Quick Deal</span></div>
+            <div class="listsec1">
+              <div class="list_name">
+                <span> Dennis </span>
+                <p>Labone</p>
+              </div>
+              <div class="price_list">
+                <span>$1,400.00 per month</span>
+                <p>New Build/Off-plan Properties</p>
+              </div>
+            </div>
+            <div class="listsec2">
+              <ul class="list_addy">
+              <li>51 Ndabaningi Sithole Rd, Labone, Accra</li>
+              <li><i class="fa fa-heart-o"></i></li>
+              </ul>
+            </div>
+            <div class="listsec3">
+              <ul class="list_addy">
+                <li>Ayi</li>
+              </ul>
+              <ul class="pl_right_icon">
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_874_.png">3</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_2186_.png">2</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/drive.png">1</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card" >
+         <div class="img-wrapper">
+          <img src="img/1575.jpg" class="card-img-top" alt="...">
+        </div>
+          <div class="card-body">
+            <div class="price_neg2"><span class="green">Quick Deal</span></div>
+            <div class="listsec1">
+              <div class="list_name">
+                <span> Dennis Doherty</span>
+                <p>Labone</p>
+              </div>
+              <div class="price_list">
+                <span>$1,400.00 per month</span>
+                <p>New Build/Off-plan Properties</p>
+              </div>
+            </div>
+            <div class="listsec2">
+              <ul class="list_addy">
+              <li>51 Ndabaningi Sithole Rd, Labone, Accra</li>
+              <li><i class="fa fa-heart-o"></i></li>
+              </ul>
+            </div>
+            <div class="listsec3">
+              <ul class="list_addy">
+                <li>Apartment in Labone</li>
+              </ul>
+              <ul class="pl_right_icon">
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_874_.png">3</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_2186_.png">2</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/drive.png">1</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-wrapper">
+          <img src="img/logo.png" class="card-img-top" alt="...">
+        </div>
+          <div class="card-body">
+            <div class="price_neg2"><span class="green">Quick Deal</span></div>
+            <div class="listsec1">
+              <div class="list_name">
+                <span> Gifty</span>
+                <p>East Legon</p>
+              </div>
+              <div class="price_list">
+                <span>$1,400.00 per month</span>
+                <p>New Build/Off-plan Properties</p>
+              </div>
+            </div>
+            <div class="listsec2">
+              <ul class="list_addy">
+              <li>51 Ndabaningi Sithole Rd, Labone, Accra</li>
+              <li><i class="fa fa-heart-o"></i></li>
+              </ul>
+            </div>
+            <div class="listsec3">
+              <ul class="list_addy">
+                <li>Apartment in Labone</li>
+              </ul>
+              <ul class="pl_right_icon">
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_874_.png">3</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_2186_.png">2</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/drive.png">1</li>
+              </ul>
+            </div>
+ 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="card-wrapper">
+        <div class="card" >
+          <div class="img-wrapper">
+          <img src="img/1916.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <div class="listsec1">
+              <div class="list_name">
+                <span> Westfield realestate</span>
+                <p></p>
+              </div>
+              <div class="price_list">
+                <span>$1,400.00 per month</span>
+                <p>Residential for rent</p>
+              </div>
+            </div>
+            <div class="listsec2">
+              <ul class="list_addy">
+              <li>51 Ndabaningi Sithole Rd, Labone, Accra</li>
+              <li><i class="fa fa-heart-o"></i></li>
+              </ul>
+            </div>
+            <div class="listsec3">
+              <ul class="list_addy">
+                <li>Apartment in Labone</li>
+              </ul>
+              <ul class="pl_right_icon">
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_874_.png">3</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_2186_.png">2</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/drive.png">1</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card" >
+          <div class="img-wrapper">
+          <img src="img/logo.png" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <div class="listsec1">
+              <div class="list_name">
+                <span> Dennis Doherty</span>
+                <p>Labone</p>
+              </div>
+              <div class="price_list">
+                <span>$1,400.00 per month</span>
+                <p>Residential for rent</p>
+              </div>
+            </div>
+            <div class="listsec2">
+              <ul class="list_addy">
+              <li>51 Ndabaningi Sithole Rd, Labone, Accra</li>
+              <li><i class="fa fa-heart-o"></i></li>
+              </ul>
+            </div>
+            <div class="listsec3">
+              <ul class="list_addy">
+                <li>Apartment in Labone</li>
+              </ul>
+              <ul class="pl_right_icon">
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_874_.png">3</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_2186_.png">2</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/drive.png">1</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card" >
+          <div class="img-wrapper">
+          <img src="img/logo.png" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <div class="listsec1">
+              <div class="list_name">
+                <span> Dennis Doherty</span>
+                <p>Labone</p>
+              </div>
+              <div class="price_list">
+                <span>$1,400.00 per month</span>
+                <p>Residential for rent</p>
+              </div>
+            </div>
+            <div class="listsec2">
+              <ul class="list_addy">
+              <li>51 Ndabaningi Sithole Rd, Labone, Accra</li>
+              <li><i class="fa fa-heart-o"></i></li>
+              </ul>
+            </div>
+            <div class="listsec3">
+              <ul class="list_addy">
+                <li>Apartment in Labone</li>
+              </ul>
+              <ul class="pl_right_icon">
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_874_.png">3</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_2186_.png">2</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/drive.png">1</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="card-wrapper">
+        <div class="card" >
+          <div class="img-wrapper">
+          <img src="img/logo.png" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <div class="listsec1">
+              <div class="list_name">
+                <span> Dennis Doherty</span>
+                <p>Labone</p>
+              </div>
+              <div class="price_list">
+                <span>$1,400.00 per month</span>
+                <p>Residential for rent</p>
+              </div>
+            </div>
+            <div class="listsec2">
+              <ul class="list_addy">
+              <li>51 Ndabaningi Sithole Rd, Labone, Accra</li>
+              <li><i class="fa fa-heart-o"></i></li>
+              </ul>
+            </div>
+            <div class="listsec3">
+              <ul class="list_addy">
+                <li>Apartment in Labone</li>
+              </ul>
+              <ul class="pl_right_icon">
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_874_.png">3</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_2186_.png">2</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/drive.png">1</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-wrapper">
+          <img src="img/logo.png" class="card-img-top" alt="...">
+        </div>
+          <div class="card-body">
+            <div class="price_neg2"><span class="green">Quick Deal</span></div>
+            <div class="listsec1">
+              <div class="list_name">
+                <span> Dennis Doherty</span>
+                <p>Labone</p>
+              </div>
+              <div class="price_list">
+                <span>$1,400.00 per month</span>
+                <p>Residential for rent</p>
+              </div>
+            </div>
+            <div class="listsec2">
+              <ul class="list_addy">
+              <li>51 Ndabaningi Sithole Rd, Labone, Accra</li>
+              <li><i class="fa fa-heart-o"></i></li>
+              </ul>
+            </div>
+            <div class="listsec3">
+              <ul class="list_addy">
+                <li>Apartment in Labone</li>
+              </ul>
+              <ul class="pl_right_icon">
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_874_.png">3</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_2186_.png">2</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/drive.png">1</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-wrapper">
+          <img src="img/logo.png" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <div class="price_neg2"><span class="green">Quick Deal</span></div>
+            <div class="listsec1">
+              <div class="list_name">
+                <span> Dennis Doherty</span>
+                <p>Labone</p>
+              </div>
+              <div class="price_list">
+                <span>$1,400.00 per month</span>
+                <p>Residential for rent</p>
+              </div>
+            </div>
+            <div class="listsec2">
+              <ul class="list_addy">
+              <li>51 Ndabaningi Sithole Rd, Labone, Accra</li>
+              <li><i class="fa fa-heart-o"></i></li>
+              </ul>
+            </div>
+            <div class="listsec3">
+              <ul class="list_addy">
+                <li>Apartment in Labone</li>
+              </ul>
+              <ul class="pl_right_icon">
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_874_.png">3</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_2186_.png">2</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/drive.png">1</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+<!-- closed New Developement -->
+
+<!-- short term rental -->
+
+<div class=" container">
+  <h3 class="section-h">Short term rental apartments in Accra</h3>
+  <p class="pclass">Finding the Perfect Short Term Rental Apartments in Accra, Ghana</p>
+   
+ 
+ <div class="container">
+  </div>
+  <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="card-wrapper">
+        <div class="card" >
+          <div class="img-wrapper">
+          <img src="img/1575.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <div class="price_neg2"><span class="green">Quick Deal</span></div>
+            <div class="listsec1">
+              <div class="list_name">
+                <span> Dennis </span>
+                <p>Labone</p>
+              </div>
+              <div class="price_list">
+                <span>$1,400.00 per month</span>
+                <p>New Build/Off-plan Properties</p>
+              </div>
+            </div>
+            <div class="listsec2">
+              <ul class="list_addy">
+              <li>51 Ndabaningi Sithole Rd, Labone, Accra</li>
+              <li><i class="fa fa-heart-o"></i></li>
+              </ul>
+            </div>
+            <div class="listsec3">
+              <ul class="list_addy">
+                <li>Ayi</li>
+              </ul>
+              <ul class="pl_right_icon">
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_874_.png">3</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_2186_.png">2</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/drive.png">1</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card" >
+         <div class="img-wrapper">
+          <img src="img/1575.jpg" class="card-img-top" alt="...">
+        </div>
+          <div class="card-body">
+            <div class="price_neg2"><span class="green">Quick Deal</span></div>
+            <div class="listsec1">
+              <div class="list_name">
+                <span> Dennis Doherty</span>
+                <p>Labone</p>
+              </div>
+              <div class="price_list">
+                <span>$1,400.00 per month</span>
+                <p>New Build/Off-plan Properties</p>
+              </div>
+            </div>
+            <div class="listsec2">
+              <ul class="list_addy">
+              <li>51 Ndabaningi Sithole Rd, Labone, Accra</li>
+              <li><i class="fa fa-heart-o"></i></li>
+              </ul>
+            </div>
+            <div class="listsec3">
+              <ul class="list_addy">
+                <li>Apartment in Labone</li>
+              </ul>
+              <ul class="pl_right_icon">
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_874_.png">3</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_2186_.png">2</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/drive.png">1</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-wrapper">
+          <img src="img/logo.png" class="card-img-top" alt="...">
+        </div>
+          <div class="card-body">
+            <div class="price_neg2"><span class="green">Quick Deal</span></div>
+            <div class="listsec1">
+              <div class="list_name">
+                <span> Gifty</span>
+                <p>East Legon</p>
+              </div>
+              <div class="price_list">
+                <span>$1,400.00 per month</span>
+                <p>New Build/Off-plan Properties</p>
+              </div>
+            </div>
+            <div class="listsec2">
+              <ul class="list_addy">
+              <li>51 Ndabaningi Sithole Rd, Labone, Accra</li>
+              <li><i class="fa fa-heart-o"></i></li>
+              </ul>
+            </div>
+            <div class="listsec3">
+              <ul class="list_addy">
+                <li>Apartment in Labone</li>
+              </ul>
+              <ul class="pl_right_icon">
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_874_.png">3</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_2186_.png">2</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/drive.png">1</li>
+              </ul>
+            </div>
+ 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="card-wrapper">
+        <div class="card" >
+          <div class="img-wrapper">
+          <img src="img/1916.jpg" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <div class="listsec1">
+              <div class="list_name">
+                <span> Westfield realestate</span>
+                <p></p>
+              </div>
+              <div class="price_list">
+                <span>$1,400.00 per month</span>
+                <p>Residential for rent</p>
+              </div>
+            </div>
+            <div class="listsec2">
+              <ul class="list_addy">
+              <li>51 Ndabaningi Sithole Rd, Labone, Accra</li>
+              <li><i class="fa fa-heart-o"></i></li>
+              </ul>
+            </div>
+            <div class="listsec3">
+              <ul class="list_addy">
+                <li>Apartment in Labone</li>
+              </ul>
+              <ul class="pl_right_icon">
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_874_.png">3</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_2186_.png">2</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/drive.png">1</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card" >
+          <div class="img-wrapper">
+          <img src="img/logo.png" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <div class="listsec1">
+              <div class="list_name">
+                <span> Dennis Doherty</span>
+                <p>Labone</p>
+              </div>
+              <div class="price_list">
+                <span>$1,400.00 per month</span>
+                <p>Residential for rent</p>
+              </div>
+            </div>
+            <div class="listsec2">
+              <ul class="list_addy">
+              <li>51 Ndabaningi Sithole Rd, Labone, Accra</li>
+              <li><i class="fa fa-heart-o"></i></li>
+              </ul>
+            </div>
+            <div class="listsec3">
+              <ul class="list_addy">
+                <li>Apartment in Labone</li>
+              </ul>
+              <ul class="pl_right_icon">
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_874_.png">3</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_2186_.png">2</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/drive.png">1</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card" >
+          <div class="img-wrapper">
+          <img src="img/logo.png" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <div class="listsec1">
+              <div class="list_name">
+                <span> Dennis Doherty</span>
+                <p>Labone</p>
+              </div>
+              <div class="price_list">
+                <span>$1,400.00 per month</span>
+                <p>Residential for rent</p>
+              </div>
+            </div>
+            <div class="listsec2">
+              <ul class="list_addy">
+              <li>51 Ndabaningi Sithole Rd, Labone, Accra</li>
+              <li><i class="fa fa-heart-o"></i></li>
+              </ul>
+            </div>
+            <div class="listsec3">
+              <ul class="list_addy">
+                <li>Apartment in Labone</li>
+              </ul>
+              <ul class="pl_right_icon">
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_874_.png">3</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_2186_.png">2</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/drive.png">1</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <div class="card-wrapper">
+        <div class="card" >
+          <div class="img-wrapper">
+          <img src="img/logo.png" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <div class="listsec1">
+              <div class="list_name">
+                <span> Dennis Doherty</span>
+                <p>Labone</p>
+              </div>
+              <div class="price_list">
+                <span>$1,400.00 per month</span>
+                <p>Residential for rent</p>
+              </div>
+            </div>
+            <div class="listsec2">
+              <ul class="list_addy">
+              <li>51 Ndabaningi Sithole Rd, Labone, Accra</li>
+              <li><i class="fa fa-heart-o"></i></li>
+              </ul>
+            </div>
+            <div class="listsec3">
+              <ul class="list_addy">
+                <li>Apartment in Labone</li>
+              </ul>
+              <ul class="pl_right_icon">
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_874_.png">3</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_2186_.png">2</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/drive.png">1</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-wrapper">
+          <img src="img/logo.png" class="card-img-top" alt="...">
+        </div>
+          <div class="card-body">
+            <div class="price_neg2"><span class="green">Quick Deal</span></div>
+            <div class="listsec1">
+              <div class="list_name">
+                <span> Dennis Doherty</span>
+                <p>Labone</p>
+              </div>
+              <div class="price_list">
+                <span>$1,400.00 per month</span>
+                <p>Residential for rent</p>
+              </div>
+            </div>
+            <div class="listsec2">
+              <ul class="list_addy">
+              <li>51 Ndabaningi Sithole Rd, Labone, Accra</li>
+              <li><i class="fa fa-heart-o"></i></li>
+              </ul>
+            </div>
+            <div class="listsec3">
+              <ul class="list_addy">
+                <li>Apartment in Labone</li>
+              </ul>
+              <ul class="pl_right_icon">
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_874_.png">3</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_2186_.png">2</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/drive.png">1</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="img-wrapper">
+          <img src="img/logo.png" class="card-img-top" alt="...">
+          </div>
+          <div class="card-body">
+            <div class="price_neg2"><span class="green">Quick Deal</span></div>
+            <div class="listsec1">
+              <div class="list_name">
+                <span> Dennis Doherty</span>
+                <p>Labone</p>
+              </div>
+              <div class="price_list">
+                <span>$1,400.00 per month</span>
+                <p>Residential for rent</p>
+              </div>
+            </div>
+            <div class="listsec2">
+              <ul class="list_addy">
+              <li>51 Ndabaningi Sithole Rd, Labone, Accra</li>
+              <li><i class="fa fa-heart-o"></i></li>
+              </ul>
+            </div>
+            <div class="listsec3">
+              <ul class="list_addy">
+                <li>Apartment in Labone</li>
+              </ul>
+              <ul class="pl_right_icon">
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_874_.png">3</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_2186_.png">2</li>
+                <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/drive.png">1</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+<!-- closed short term rental -->
+
+
+<!-- Price drop -->
+      <div class="container">
+         <h3 class="section-h">Price drop This week on Apartments for rent in Accra</h3>
+         <p class="pclass">Seize the opportunity quickly as great deals are not likely to come twice!</p>
+       <div class="row">
+        <div class="col-md-6">
+        <div class="price_drop">
+        <div class="price_drop_left">
+          <h5>3 Bedroom Apartment for Rent at North Ridge, Accra</h5>
+          <span class="main_price">$2,500.00 per Month</span>
+          <span class="offer_price">$3,000.00 per Month</span>
+        
+        <h9>3rd Floor, Grand Oyeeman Building-South Liberaion Link, Airport City - Accra</h9>
+        <span class="inner_city">Ridge,Accra</span>
+        <ul class="pl_right_icon">
+          <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_874_.png">3</li>
+          <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_2186_.png"> 3</li>
+          <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/drive.png"> 1 </li>
+          <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/area.png"></li>
+       </ul>
+    </div>
+            <div class="price_drop_inner_right">
+              <div class="featured_tags"></div>
+               <img class="img-fluid" src="img/632.jpg"  title="3 Bedroom Apartment for Rent at North Ridge, Accra" alt="3 Bedroom Apartment for Rent at North Ridge, Accra" />
+              </div>
+           </div>
+          </div>
+
+
+          <div class="col-md-6">
+            <div class="price_drop">
+            <div class="price_drop_left">
+              <h5>3 Bedroom Apartment for Rent at East Legon</h5>
+              <span class="main_price">$1,800.00 per Month</span>
+              <span class="offer_price">$2,000.00 per Month</span>
+            
+            <h9>3rd Floor, Grand Oyeeman Building-South Liberaion Link, Airport City - Accra</h9>
+            <span class="inner_city">Ridge,Accra</span>
+            <ul class="pl_right_icon">
+              <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_874_.png">3</li>
+              <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_2186_.png"> 3</li>
+              <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/drive.png"> 1 </li>
+              <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/area.png"></li>
+           </ul>
+        </div>
+                <div class="price_drop_inner_right">
+                  <div class="featured_tags"></div>
+                   <img class="img-fluid" src="img/893.jpg"  title="3 Bedroom Apartment for Rent at North Ridge, Accra" alt="3 Bedroom Apartment for Rent at North Ridge, Accra" />
+                  </div>
+               </div>
+              </div>
+
+
+              <div class="col-md-6">
+                <div class="price_drop">
+                <div class="price_drop_left">
+                  <h5>3 Bedroom Apartment for Rent at North Ridge, Accra</h5>
+                  <span class="main_price">$1,700.00 per Month</span>
+                  <span class="offer_price">$1,800.00 per Month</span>
+                
+                <h9>3rd Floor, Grand Oyeeman Building-South Liberaion Link, Airport City - Accra</h9>
+                <span class="inner_city">Ridge,Accra</span>
+                <ul class="pl_right_icon">
+                  <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_874_.png">3</li>
+                  <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_2186_.png"> 3</li>
+                  <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/drive.png"> 1 </li>
+                  <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/area.png"></li>
+               </ul>
+            </div>
+                    <div class="price_drop_inner_right">
+                      <div class="featured_tags"></div>
+                       <img class="img-fluid" src="img/945.jpg"  title="3 Bedroom Apartment for Rent at North Ridge, Accra" alt="3 Bedroom Apartment for Rent at North Ridge, Accra" />
+                      </div>
+                   </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="price_drop">
+                    <div class="price_drop_left">
+                      <h5>Furnished 1 Bedroom Duplex Apartment for rent-Embassy </h5>
+                      <span class="main_price">$2,500.00 per Month</span>
+                      <span class="offer_price">$3,000.00 per Month</span>
+                    
+                    <h9>3rd Floor, Grand Oyeeman Building-South Liberaion Link, Airport City - Accra</h9>
+                    <span class="inner_city">Ridge,Accra</span>
+                    <ul class="pl_right_icon">
+                      <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_874_.png">3</li>
+                      <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/XMLID_2186_.png"> 3</li>
+                      <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/drive.png"> 1 </li>
+                      <li><img class="img-fluid" src="https://apartments.com.gh/oc-content/themes/wizestate/images/area.png"></li>
+                   </ul>
+                </div>
+                        <div class="price_drop_inner_right">
+                          <div class="featured_tags"></div>
+                           <img class="img-fluid" src="img/1022.jpg"  title="3 Bedroom Apartment for Rent at North Ridge, Accra" alt="3 Bedroom Apartment for Rent at North Ridge, Accra" />
+                          </div>
+                       </div>
+                      </div>
+
+
+
+
+
+       </div>
+      </div>
+<!-- Prie drop closed -->
+
+
+<!-- Banner -->
+       <div class="banner2">
+        <div class="container">
+          <div class="banner-img le" style="background-image:url(img/iStock-1224531613.jpg);"></div>
+          <div class="banner_body">
+            <h3>Looking  for extra income?</h3>
+            <p>Become an Apartments Ghana agent today.</p>
+            <!-- <button type="button" class="btn btn-primary"> click here for more details</button> -->
+          </div>
+        </div>
+      </div> 
+<!-- Closed Banner -->
+
+
+
+<!-- Service Content -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-6">
+            <div class="section-header text-center pb-5 ">
+              <h3 class="section-h">Smart Property Services in Ghana</h3>
+              <p>Practical services to free up time and money for Landlords and Tenants</p>
+            </div>
+          </div>
+          <div class="row  mb-3">
+          <div class="col-md-4 col-lg-4">
+            <div class="card text-center bg-white pb-2">
+              <div class="img-area mb-4">
+                <img src="img/service_image_one.png" class="img-fluid">
+              </div>
+              <h2 class="card-title">Get guaranteed rent for your apartment</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing. Quam inventore nihil dolor blanditiis</p>
+              <button type="button" class="btn btn-primary"> Apply here</button>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4">
+            <div class="card text-center bg-white pb-2">
+              <div class="img-area mb-4">
+                <img src="img/service_image_two.png" class="img-fluid">
+              </div>
+              <h2 class="card-title">Sell Your Apartments</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quam inventore nihil dolor blanditiis  amet dolor sit amet consectetur adipisicing eli consectetur adipisicing elit</p>
+                <button type="button" class="btn btn-primary"> Apply here</button>
+            </div>
+          </div>
+          <div class=" col-md-4 col-lg-4">
+            <div class="card text-center bg-white pb-2">
+              <div class="img-area mb-4">
+                <img src="img/service_image_three.png" class="img-fluid">
+              </div>
+              <h2 class="card-title">Pay your monthly rent</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                dolor sit amet consectetur adipisicing eli
+                 Quam inventore nihil dolor blanditiis</p>
+              <button type="button" class="btn btn-primary btn-1"> Apply here</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- closed Services -->
+
+
+
+      <!-- Features -->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-6">
+            <div class="section-header text-center pb-5 ">
+              <h3 class="section-h">Find Apartments That Match The Features You Want.</h3>
+              <p>Click below to view only apartments with your ideal features and requirements</p>
+            </div>
+          </div>
+        </div>
+            <div class="row mb-3">
+              <div class="col-md-3">
+                <div class="home-content pb-2">
+                  <div clas="home-icon">
+                    <img src="img/stationary-bike .png" class="img-fluid" alt="">
+                  </div>
+                  <h6>Fitness Center</h6>
+                  <p>Find your next home while staying fit in Accra,Ghana</p>
+                </div>
+              </div>
+            
+            <div class="col-md-3">
+              <div class="home-content pb-2">
+                <div clas="home-icon">
+                  <img src="img/dishwasher.png" class="img-fluid" alt="">
+                </div>
+                <h6>Dishwasher</h6>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+            </div>
+          
+          <div class="col-md-3">
+            <div class="home-content pb-2">
+              <div clas="home-icon">
+              <img src="img/spaces.png" class="img-fluid" alt="">
+            </div>
+            <h6>Secure Parking</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          </div>
+        
+        <div class=" col-md-3">
+          <div class="home-content pb-2">
+            <div clas="home-icon">
+              <img src="img/swimming-pool.png" class="img-fluid" alt="">
+            </div>
+            <h6>Swimming Pool</h6>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="home-content pb-2">
+            <div clas="home-icon">
+            <img src="img/elevator.png" class="img-fluid" alt="">
+          </div>
+          <h6>Secure Parking</h6>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+        </div>
+        <div class="col-md-3">
+          <div class="home-content pb-2">
+            <div clas="home-icon">
+            <img src="img/photo.png" class="img-fluid" alt="">
+          </div>
+          <h6>Professional Photos</h6>
+          <p>Find your next home while staying fit in Accra,Ghana</p>
+        </div>
+        </div>
+
+        <div class="col-md-3">
+          <div class="home-content pb-2">
+            <div clas="home-icon">
+            <img src="img/air-conditioner.png" class="img-fluid" alt="">
+          </div>
+          <h6>Air Conditioner</h6>
+          <p>Find your next home while staying fit in Accra,Ghana</p>
+        </div>
+        </div>
+        <div class="col-md-3">
+          <div class="home-content pb-2">
+            <div clas="home-icon">
+            <img src="img/solar-energy.png" class="img-fluid" alt="">
+          </div>
+          <h6>Solar Panels</h6>
+          <p>Find your next home while staying fit in Accra,Ghana</p>
+        </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- closed features -->
+
+<!-- popular searches -->
+     <div class="container">
+      <div class="section-header text-center pb-5 ">
+        <h4 class="section-h">Popular Search</h4>
+        <p>What People Are Most looking For</p>
+      </div>
+         <div class="row">
+          <div class="col-md-3">1</div>
+          <div class="col-md-3">2</div>
+          <div class="col-md-3">3</div>
+          <div class="col-md-3">4</div>
+        </div>
+     </div>
+
+<!--closed popular searches -->
+
+
+    <!-- footer -->
+    <footer class="footermain">
+      <div class="container">
+        <div class="logo_icon_section">
+          <div class="row">
+            <div class="col-lg-6 col-sm-6">
+              <div class="aplogo">
+                <img src="img/logo.png" border-0>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-sm-6">
+              <div class="socials">
+                <ul class="so_ul">
+                  <li><i class="fa-brands fa-facebook icons"></i></li>
+                  <li><i class="fa-brands fa-instagram icons"></i></li>
+                  <li><i class="fa-brands fa-twitter icons"></i></li>
+                  <li><i class="fa-brands fa-linkedin icons"></i></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="footer_bottom">
+              <div class="row">
+                <div class="col-sm-3"> 
+                  <div class="sub_sec">
+                    <h4>The Number One Site For Apartment Rentals In Accra Ghana</h4>
+                    <p>Enjoy a pleasant life in the wealthiest country in Africa by owning your own home. It has never been so easy, just fill out this one-time form and we can get started for you.s</p>
+                    <div class="input-group">
+                    <input type="text" class="form-control first" name="user_email" placeholder="Enter Email Address">
+                    <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit" name="submit_signup">Join</button>
+                  </div>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="list">
+                      <ul class="list">
+                        <li>Apartments to rent in east Ridge</li>
+                        <li>Apartments to rent in west Ridge</li>
+                        <li>Apartments to rent in Airport residential</li>
+                        <li>Apartments to rent in Dzorwulu</li>
+                        <li>Apartments to rent in Roman Ridge</li>
+                        <li>Apartments to rent in east cantoments</li>
+                        <li>Apartments to rent in Labone</li>
+                        <li>Apartments to rent in Airport Hills</li>
+                        <li>Apartments to rent in East Legon</li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="Ad">
+                    <ul class="Ad">
+                      <li>Advertise</li>
+                      <li>Add a listing</li>
+                      <li>Community Voice</li>
+                      <li>Add a partner</li>
+                      <li>Blog</li>
+                    </ul>
+                  </div>
+                  <div class="footer_dev">
+                    <ul class="footer_dev">
+                      <br>
+                      <li>Embassy Garden-Cantoments</li>
+                      <li>The Gallery-Tettteh Qushie</li>
+                      <li>The Ivy-East Legon</li>
+                      <li>Jarie-Dzorwulu</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="About">
+                    <ul class="About">
+                      <li>Careers</li>
+                      <li>Terms of service</li>
+                      <li>PrivacyStatement</li>
+                      <li>Rent Guaranteed for landlord</li>
+                      <li>Pay your rent monthly in Ghana</li>
+                      <li>Sitemap</li>
+                      <li>Book Embassy Gardens in Accra</li>
+                    </ul>
+                </div>
+              </div>
+            </div>   
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Closed Footer -->
+
+      <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+      
+        const swiper = new Swiper(...)
+      </script>
+</body>
+</html>

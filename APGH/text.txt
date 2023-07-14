@@ -1,0 +1,51 @@
+<h5>Residential Properties for Rent</h5>
+            <ul>
+              <li class="el">
+                <div class="popular_image"><img src="img/2406_thumbnail.jpg"></div>
+                <div class="popular_details">
+                  <p class="pl">Luxury 5 bedroom</p>
+                  <span class="popular_price">$550,000 per Month</span>
+                  <span class="popular_views">21 views</span>
+                </div> 
+              </li>
+              <li class="el">
+                <div class="popular_image"><img src="img/2406_thumbnail.jpg"></div>
+                <div class="popular_details">
+                  <p class="pl">Luxury 5 bedroom</p>
+                  <span class="popular_price">$550,000 per Month</span>
+                  <span class="popular_views">21 views</span>
+                </div>
+              </li>
+              <li class="el">
+                <div class="popular_image"><img src="img/2406_thumbnail.jpg"></div>
+                <div class="popular_details">
+                  <p class="pl">Luxury 5 bedroom</p>
+                  <span class="popular_price">$550,000 per Month</span>
+                  <span class="popular_views">21 views</span>
+                </div>
+              </li>
+              <li class="el">
+                <div class="popular_image"><img src="img/2406_thumbnail.jpg"></div>
+                <div class="popular_details">
+                  <p class="pl">Luxury 5 bedroom</p>
+                  <span class="popular_price">$550,000 per Month</span>
+                  <span class="popular_views">21 views</span>
+                </div>
+              </li>
+              <li class="el">
+                <div class="popular_image"><img src="img/2406_thumbnail.jpg"></div>
+                <div class="popular_details">
+                  <p class="pl">Luxury 5 bedroom</p>
+                  <span class="popular_price">$550,000 per Month</span>
+                  <span class="popular_views">21 views</span>
+                </div>
+              </li>
+              <li class="el">
+                <div class="popular_image"><img src="img/2406_thumbnail.jpg"></div>
+                <div class="popular_details">
+                  <p class="pl">Luxury 5 bedroom</p>
+                  <span class="popular_price">$550,000 per Month</span>
+                  <span class="popular_views">21 views</span>
+              </li>
+            </ul>
+          </div>
