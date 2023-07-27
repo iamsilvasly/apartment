@@ -29,12 +29,12 @@
           <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
            <!-- SideBar Header -->
             <div class="offcanvas-header text-white border-bottom">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">apartmentsGHANA</h5>
-              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              <a class="navbar-brand" href="#"><img src="img/logo.png" class="navlogo"></a><!--apartmentsGHANA -->
+              <button type="button" class="btn-close btn-close cls" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <!-- SideBar Body -->
             <div class="offcanvas-body d-flex flex-column flex-lg-row"> <!--d-flex flex-column flex-lg-row-->
-              <ul class="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+              <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
                 <li class="nav-item mx-2">
                   <a class="nav-link bold" aria-current="page" href="#">Quick Sell</a>
                 </li>
@@ -52,8 +52,11 @@
                 </li>
               </ul>
               <!-- Login/Register -->
-              <div class="d-flex justify-content-center align-items-center flex-lg-row--" >
+              <div class="justify-content-start d-flex  flex-lg-row" >
                 <a class="nav-link colo" href="#">List Properties for free</a>
+               <div class="nav-link  blue">
+                <i class="fa fa-user"i></i>
+               </div>
                 <!-- <a class="nav-link" href="login"><i class="fa fa-user"i></a> -->
               </div>
             </div>
@@ -67,7 +70,7 @@
         <div class="container text">
           <p class="bold in">Search apartments for sale or to rent in Accra</p>
             <div class="row">
-               <div class="col-md-2">
+               <div class="col-md-4 col-lg-2">
                 <!-- <label for="standard-select"></label> -->
                 <div class="select-container">
                   <select id="select-box">
@@ -82,7 +85,7 @@
                 </div> -->
                 </div>
                </div>
-               <div class="col-md-2">
+               <div class="col-md-4 col-lg-2">
                 <div class="select-container">
                   <select id="select-box">
                     <option value="Option 1">Select a City</option>
@@ -93,14 +96,14 @@
                   </select>
                 </div>
                </div>
-               <div class="col-md-2">
+               <div class="col-md-4 col-lg-2">
                 <div class="select-container">
                   <select id="select-box">
                     <option value="Option 1">Select Area</option>
                   </select>
                 </div>
                </div>
-               <div class="col-md-2">
+               <div class="col-md-4 col-lg-2">
 
                 <div class="select-container">
                   <select id="select-box">
@@ -110,12 +113,12 @@
                   </select>
                 </div>
                </div>
-               <div class="col-md-2">
+               <div class="col-md-4 col-lg-2">
                 <!-- <div class="input-group"> -->
                   <!-- <input type="text" class="form-control first" name="name" placeholder="Search"> -->
-                  <input type="text"  placeholder="Keywords" class="search1">
+                  <input type="text"  placeholder=" Keywords " class="search1"> 
                 </div>
-                  <div class="col-md-2">
+                  <div class="col-md-4 col-lg-2">
                   <button class="search_btn">Search</button>
                   <!-- <span class="input-group-btn"> -->
                   <!-- <button class="btn btn-default" type="submit" name="submit_signup">Search</button> -->
@@ -131,8 +134,8 @@
       <!-- slider -->
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 col-sm-6 col-md-6" style="background-color:none">
-            <h6 class="bold2">Premium Apartments for Rent in Accra</h6>
+          <div class="col-lg-8 col-sm-6 col-md-6 mt-2" style="background-color:none">
+            <h6 class="bold2 stop">Premium Apartments for Rent in Accra</h6>
             
             
             <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -164,47 +167,22 @@
                   </div>
                 </div>
               </div>
-              <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button> -->
-              <!-- <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button> -->
             </div>
-            
-            
-            
-            
-            
-            <!-- <div class="swiper"> -->
-                <!-- Additional required wrapper -->
-                <!-- <div class="swiper-wrapper"> -->
-                  <!-- Slides -->
-                  <!-- <div class="swiper-slide"><img src="img/1935.jpg"></div>
-                  <div class="swiper-slide"><img src="img/1903.jpg"></div>
-                  <div class="swiper-slide"><img src="img/973.jpg"></div>
-                  <div class="swiper-slide"><img src="img/1022.jpg"></div> -->
-                  
-                  <!-- </div> -->
-                <!-- If we need pagination -->
-                <!-- <div class="swiper-pagination"></div> -->
-              
-                <!-- If we need navigation buttons -->
-                <!-- <div class="swiper-button-prev"></div> -->
-                <!-- <div class="swiper-button-next"></div>  -->
-              
-                <!-- If we need scrollbar -->
-                <!-- <div class="swiper-scrollbar"></div>  -->
-              <!-- </div> -->
           </div>
-
-
            <!-- Slider main container -->
-          <div class="col-lg-4 col-sm-6" style="background-color:none">
-            <h6 class="bold">Premium Apartments for Sale in Accra</h6>
-            <img src="img/973.jpg" class="imgtest" style="width:100%; height: 95%;">
+          <div class="col-lg-4 col-sm-6 mt-2" style="background-color:none">
+            <h6 class="bold stop">Premium Apartments for Sale in Accra</h6>
+            <div class="sidedis stop">
+              <img src="img/973.jpg" style="height: 100%">
+              <div class="price_neg4"><span class="green">Bills Included</span></div>
+              <div class="price_neg5"><span class="green">Price Negotiatable</span></div>
+              <div class="sidecap">
+               <h3 class="whit stop">Furnished 3bedroom Duplex for sale-Cantoments</h3>
+               <h6 class="whit stop">$370,00.00 </h6>
+               <p class="whit stop">Cantoment</p>
+              </div>          
+            </div>
+          </div>
           </div>
         </div>
       </div>
@@ -212,13 +190,13 @@
      
       
 <div class="container">
-  <div class="row gx-5">
+  <div class="row gx-5 mt-5">
     <div class=" col-md-4">
       <div class="list_box">
         <img src="img/1903.png">
         <div class="logo_left"><img src="img/Profile Picture (5).jpg" class="fluid"></div>
         <div class="price_neg"><span class="green">Price Negotiatable</span></div>
-         <div class="list_dets">
+         <div class="list_dets stop">
            <div class="listsec1">
              <div class="list_name">
                <span> Dennis Doherty</span>
@@ -249,12 +227,12 @@
        </div>
     </div>
 
-    <div class="col-lg-4">
+    <div class="col-md-4">
     <div class="list_box">
       <img src="img/1935.jpg">
       <div class="logo_left"><img src="img/Profile Picture (5).jpg" class="fluid"></div>
       <div class="price_neg"><span class="green">Price Negotiatable</span></div>
-       <div class="list_dets">
+       <div class="list_dets stop">
          <div class="listsec1">
            <div class="list_name">
              <span> Dennis Doherty</span>
@@ -285,8 +263,14 @@
      </div>
     </div>
 
-    <div class="col-lg-4">
+    <div class="col-md-4">
+      <div class="advert stop">
       <img src="img/home_right_one_ads_image.jpg">
+      <div class="add-caption">
+       <h4 class="colo stop">Looking for an apartment in Ghana?</h4>
+       <h6 class="stop">Find your perfect property now as Apartments Ghana offers the best deals around.</h6>
+      </div>
+      </div>
     </div>
  </div> 
 
@@ -297,12 +281,12 @@
 
 <div class="container">
   <div class="row gx-8">
-    <div class="col-lg-4">
+    <div class="col-md-4">
       <div class="list_box">
         <img src="img/32.jpg">
         <div class="logo_left"><img src="img/Profile Picture (5).jpg" class="fluid"></div>
         <div class="price_neg"><span class="green">Price Negotiatable</span></div>
-         <div class="list_dets">
+         <div class="list_dets stop">
            <div class="listsec1">
              <div class="list_name">
                <span> Dennis Doherty</span>
@@ -333,12 +317,12 @@
        </div>
     </div>
 
-    <div class="col-lg-4">
+    <div class="col-md-4">
     <div class="list_box">
       <img src="img/1903.png">
       <div class="logo_left"><img src="img/Profile Picture (5).jpg" class="fluid"></div>
       <div class="price_neg"><span class="green">Price Negotiatable</span></div>
-       <div class="list_dets">
+       <div class="list_dets stop">
          <div class="listsec1">
            <div class="list_name">
              <span> Dennis Doherty</span>
@@ -369,9 +353,15 @@
      </div>
     </div>
 
-    <div class="col-lg-4 gx-5">
-      <img src="img/home_right_two_ads_image.jpg" class="Rigth">
-    </div>
+    <div class="col-md-4 gx-5">
+      <div class="advert2 stop">
+        <img src="img/home_right_two_ads_image.jpg" class="Rigth">
+        <div class="add-caption2">
+         <h4 class="colo stop">List your property for free</h4>
+         <h6 class="stop">Free, easy and fast-posting an advertisement takes less than 2 minutes the best deals around.</h6>
+        </div>
+        </div>
+      </div>
  </div> 
 
   
@@ -380,8 +370,8 @@
 
 <!-- find professional -->
 <div class="container">
-  <h4 class="section-h">Find professionally managed apartments in Accra</h4>
-  <p class="pclass">Finding an apartment to rent in Accra doesn't have to be a hassle. With Apartments.com.gh, you can quickly and easily find a professionally managed apartment that fits your needs and budget. Whether you're looking for a one-bedroom or studio, we have something for everyone. Plus, our search filters make finding the perfect place easy. So why wait? Start your search today! </p>
+  <h4 class="section-h stop">Find professionally managed apartments in Accra</h4>
+  <p class="pclass stop">Finding an apartment to rent in Accra doesn't have to be a hassle. With Apartments.com.gh, you can quickly and easily find a professionally managed apartment that fits your needs and budget. Whether you're looking for a one-bedroom or studio, we have something for everyone. Plus, our search filters make finding the perfect place easy. So why wait? Start your search today! </p>
 <div class="row">
   <div class="col-md-4"> <div class="list_box">
     <img src="img/1903.png">
@@ -420,7 +410,7 @@
     <div class="list_box">
     <img src="img/23.jpg">
     <div class="logo_left"><img src="img/Profile Picture (5).jpg" class="fluid"></div>
-    <div class="price_neg"><span class="green">Quick Deal</span></div>
+    <div class="price_neg3"><span class="green">Quick Deal</span></div>
      <div class="list_dets">
        <div class="listsec1">
          <div class="list_name">
@@ -456,7 +446,7 @@
   <div class="col-md-4"> <div class="list_box">
     <img src="img/1903.png">
     <div class="logo_left"><img src="img/Profile Picture (5).jpg" class="fluid"></div>
-    <div class="price_neg"><span class="green">Quick Deal</span></div>
+    <div class="price_neg3"><span class="green">Quick Deal</span></div>
      <div class="list_dets">
        <div class="listsec1">
          <div class="list_name">
@@ -490,7 +480,7 @@
     <div class="list_box">
     <img src="img/632.jpg">
     <div class="logo_left"><img src="img/Profile Picture (5).jpg" class="fluid"></div>
-    <div class="price_neg"><span class="green">Quick Deal</span></div>
+    <div class="price_neg3"><span class="green">Quick Deal</span></div>
      <div class="list_dets">
        <div class="listsec1">
          <div class="list_name">
@@ -527,8 +517,8 @@
 
 <!-- New Developement -->
  <div class=" container">
-  <h3 class="section-h">New Developement and Off-plan Appartments for sale in Accra</h3>
-  <p class="pclass">Buy directly from trusted Property Developers in Ghana. Apply for an investment Loan.</p>
+  <h3 class="section-h stop">New Developement and Off-plan Appartments for sale in Accra</h3>
+  <p class="pclass stop">Buy directly from trusted Property Developers in Ghana. Apply for an investment Loan.</p>
    
  
  <div class="container">
@@ -573,7 +563,7 @@
         </div>
         <div class="card" >
          <div class="img-wrapper">
-          <img src="img/1575.jpg" class="card-img-top" alt="...">
+          <img src="img/973.jpg" class="card-img-top" alt="...">
         </div>
           <div class="card-body">
             <div class="price_neg2"><span class="green">Quick Deal</span></div>
@@ -607,7 +597,7 @@
         </div>
         <div class="card">
           <div class="img-wrapper">
-          <img src="img/logo.png" class="card-img-top" alt="...">
+          <img src="img/1022.jpg" class="card-img-top" alt="...">
         </div>
           <div class="card-body">
             <div class="price_neg2"><span class="green">Quick Deal</span></div>
@@ -712,7 +702,7 @@
         </div>
         <div class="card" >
           <div class="img-wrapper">
-          <img src="img/logo.png" class="card-img-top" alt="...">
+          <img src="img/945.jpg" class="card-img-top" alt="...">
           </div>
           <div class="card-body">
             <div class="listsec1">
@@ -749,7 +739,7 @@
       <div class="card-wrapper">
         <div class="card" >
           <div class="img-wrapper">
-          <img src="img/logo.png" class="card-img-top" alt="...">
+          <img src="img/1916.jpg" class="card-img-top" alt="...">
           </div>
           <div class="card-body">
             <div class="listsec1">
@@ -782,7 +772,7 @@
         </div>
         <div class="card">
           <div class="img-wrapper">
-          <img src="img/logo.png" class="card-img-top" alt="...">
+          <img src="img/632.jpg" class="card-img-top" alt="...">
         </div>
           <div class="card-body">
             <div class="price_neg2"><span class="green">Quick Deal</span></div>
@@ -816,7 +806,7 @@
         </div>
         <div class="card">
           <div class="img-wrapper">
-          <img src="img/logo.png" class="card-img-top" alt="...">
+          <img src="img/1022.jpg" class="card-img-top" alt="...">
           </div>
           <div class="card-body">
             <div class="price_neg2"><span class="green">Quick Deal</span></div>
@@ -866,8 +856,8 @@
 <!-- short term rental -->
 
 <div class=" container">
-  <h3 class="section-h">Short term rental apartments in Accra</h3>
-  <p class="pclass">Finding the Perfect Short Term Rental Apartments in Accra, Ghana</p>
+  <h3 class="section-h stop">Short term rental apartments in Accra</h3>
+  <p class="pclass stop">Finding the Perfect Short Term Rental Apartments in Accra, Ghana</p>
    
  
  <div class="container">
@@ -912,7 +902,7 @@
         </div>
         <div class="card" >
          <div class="img-wrapper">
-          <img src="img/1575.jpg" class="card-img-top" alt="...">
+          <img src="img/1022.jpg" class="card-img-top" alt="...">
         </div>
           <div class="card-body">
             <div class="price_neg2"><span class="green">Quick Deal</span></div>
@@ -946,7 +936,7 @@
         </div>
         <div class="card">
           <div class="img-wrapper">
-          <img src="img/logo.png" class="card-img-top" alt="...">
+          <img src="img/945.jpg" class="card-img-top" alt="...">
         </div>
           <div class="card-body">
             <div class="price_neg2"><span class="green">Quick Deal</span></div>
@@ -1018,7 +1008,7 @@
         </div>
         <div class="card" >
           <div class="img-wrapper">
-          <img src="img/logo.png" class="card-img-top" alt="...">
+          <img src="img/1935.jpg" class="card-img-top" alt="...">
           </div>
           <div class="card-body">
             <div class="listsec1">
@@ -1206,13 +1196,13 @@
 
 <!-- Price drop -->
       <div class="container">
-         <h3 class="section-h">Price drop This week on Apartments for rent in Accra</h3>
-         <p class="pclass">Seize the opportunity quickly as great deals are not likely to come twice!</p>
+         <h3 class="section-h stop">Price drop This week on Apartments for rent in Accra</h3>
+         <p class="pclass stop">Seize the opportunity quickly as great deals are not likely to come twice!</p>
        <div class="row">
         <div class="col-md-6">
-        <div class="price_drop">
+        <div class="price_drop hori">
         <div class="price_drop_left">
-          <h5>3 Bedroom Apartment for Rent at North Ridge, Accra</h5>
+          <h5 class="stop"></h5>Bedroom Apartment for Rent at North Ridge, Accra</h5>
           <span class="main_price">$2,500.00 per Month</span>
           <span class="offer_price">$3,000.00 per Month</span>
         
@@ -1236,7 +1226,7 @@
           <div class="col-md-6">
             <div class="price_drop">
             <div class="price_drop_left">
-              <h5>3 Bedroom Apartment for Rent at East Legon</h5>
+              <h5 class="stop"></h5>3 Bedroom Apartment for Rent at East Legon</h5>
               <span class="main_price">$1,800.00 per Month</span>
               <span class="offer_price">$2,000.00 per Month</span>
             
@@ -1260,7 +1250,7 @@
               <div class="col-md-6">
                 <div class="price_drop">
                 <div class="price_drop_left">
-                  <h5>3 Bedroom Apartment for Rent at North Ridge, Accra</h5>
+                  <h5 class="stop"></h5>3 Bedroom Apartment for Rent at North Ridge, Accra</h5>
                   <span class="main_price">$1,700.00 per Month</span>
                   <span class="offer_price">$1,800.00 per Month</span>
                 
@@ -1282,8 +1272,8 @@
 
                   <div class="col-md-6">
                     <div class="price_drop">
-                    <div class="price_drop_left">
-                      <h5>Furnished 1 Bedroom Duplex Apartment for rent-Embassy </h5>
+                    <div class="price_drop_left stop">
+                      <h5 class="stop">Furnished 1 Bedroom Duplex Apartment for rent-Embassy </h5>
                       <span class="main_price">$2,500.00 per Month</span>
                       <span class="offer_price">$3,000.00 per Month</span>
                     
@@ -1302,11 +1292,6 @@
                           </div>
                        </div>
                       </div>
-
-
-
-
-
        </div>
       </div>
 <!-- Prie drop closed -->
@@ -1315,11 +1300,12 @@
 <!-- Banner -->
        <div class="banner2">
         <div class="container">
-          <div class="banner-img le" style="background-image:url(img/iStock-1224531613.jpg);"></div>
+          <div class="banner-img" style="background-image:url(img/iStock-1224531613.jpg);">
           <div class="banner_body">
-            <h3>Looking  for extra income?</h3>
+            <h3 class="colo stop">Looking  for extra income?</h3>
             <p>Become an Apartments Ghana agent today.</p>
-            <!-- <button type="button" class="btn btn-primary"> click here for more details</button> -->
+            <button type="button" class="btn btn-primary stop"> click here for more details</button>
+          </div>
           </div>
         </div>
       </div> 
@@ -1332,7 +1318,7 @@
         <div class="row">
           <div class="col-md-12 col-sm-6">
             <div class="section-header text-center pb-5 ">
-              <h3 class="section-h">Smart Property Services in Ghana</h3>
+              <h3 class="section-h stop">Smart Property Services in Ghana</h3>
               <p>Practical services to free up time and money for Landlords and Tenants</p>
             </div>
           </div>
@@ -1342,9 +1328,9 @@
               <div class="img-area mb-4">
                 <img src="img/service_image_one.png" class="img-fluid">
               </div>
-              <h2 class="card-title">Get guaranteed rent for your apartment</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing. Quam inventore nihil dolor blanditiis</p>
-              <button type="button" class="btn btn-primary"> Apply here</button>
+              <h2 class="card-title stop text-center">Get guaranteed rent for your apartment</h2>
+              <p>Lorem ipsum adipisicing. Quam tyt nihil dolor blanditiis</p>
+              <button type="button" class="btn btn-primary stop"> Apply here</button>
             </div>
           </div>
           <div class="col-md-4 col-lg-4">
@@ -1352,22 +1338,22 @@
               <div class="img-area mb-4">
                 <img src="img/service_image_two.png" class="img-fluid">
               </div>
-              <h2 class="card-title">Sell Your Apartments</h2>
+              <h2 class="card-title stop text-center marg">Sell Your Apartments</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Quam inventore nihil dolor blanditiis  amet dolor sit amet consectetur adipisicing eli consectetur adipisicing elit</p>
-                <button type="button" class="btn btn-primary"> Apply here</button>
+                Quam inventore nihil dolor  consectetur adipisicing eli </p>
+                <button type="button" class="btn btn-primary stop"> Apply here</button>
             </div>
           </div>
           <div class=" col-md-4 col-lg-4">
-            <div class="card text-center bg-white pb-2">
+            <div class="card text-center bg-white pb-2 ">
               <div class="img-area mb-4">
                 <img src="img/service_image_three.png" class="img-fluid">
               </div>
-              <h2 class="card-title">Pay your monthly rent</h2>
+              <h2 class="card-title stop text-center marg">Pay your monthly rent</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 dolor sit amet consectetur adipisicing eli
-                 Quam inventore nihil dolor blanditiis</p>
-              <button type="button" class="btn btn-primary btn-1"> Apply here</button>
+                 Quam </p>
+              <button type="button" class="btn btn-primary btn-1 stop"> Apply here</button>
             </div>
           </div>
         </div>
@@ -1381,7 +1367,7 @@
         <div class="row">
           <div class="col-md-12 col-sm-6">
             <div class="section-header text-center pb-5 ">
-              <h3 class="section-h">Find Apartments That Match The Features You Want.</h3>
+              <h3 class="section-h stop">Find Apartments That Match The Features You Want.</h3>
               <p>Click below to view only apartments with your ideal features and requirements</p>
             </div>
           </div>
@@ -1392,7 +1378,7 @@
                   <div clas="home-icon">
                     <img src="img/stationary-bike .png" class="img-fluid" alt="">
                   </div>
-                  <h6>Fitness Center</h6>
+                  <h6 class="stop">Fitness Center</h6>
                   <p>Find your next home while staying fit in Accra,Ghana</p>
                 </div>
               </div>
@@ -1402,7 +1388,7 @@
                 <div clas="home-icon">
                   <img src="img/dishwasher.png" class="img-fluid" alt="">
                 </div>
-                <h6>Dishwasher</h6>
+                <h6 class="stop">Dishwasher</h6>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
               </div>
             </div>
@@ -1412,7 +1398,7 @@
               <div clas="home-icon">
               <img src="img/spaces.png" class="img-fluid" alt="">
             </div>
-            <h6>Secure Parking</h6>
+            <h6 class="stop">Secure Parking</h6>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
           </div>
@@ -1422,7 +1408,7 @@
             <div clas="home-icon">
               <img src="img/swimming-pool.png" class="img-fluid" alt="">
             </div>
-            <h6>Swimming Pool</h6>
+            <h6 class="stop">Swimming Pool</h6>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </div>
         </div>
@@ -1432,7 +1418,7 @@
             <div clas="home-icon">
             <img src="img/elevator.png" class="img-fluid" alt="">
           </div>
-          <h6>Secure Parking</h6>
+          <h6 class="stop">Secure Parking</h6>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
         </div>
@@ -1441,7 +1427,7 @@
             <div clas="home-icon">
             <img src="img/photo.png" class="img-fluid" alt="">
           </div>
-          <h6>Professional Photos</h6>
+          <h6 class="stop">Professional Photos</h6>
           <p>Find your next home while staying fit in Accra,Ghana</p>
         </div>
         </div>
@@ -1451,7 +1437,7 @@
             <div clas="home-icon">
             <img src="img/air-conditioner.png" class="img-fluid" alt="">
           </div>
-          <h6>Air Conditioner</h6>
+          <h6 class="stop">Air Conditioner</h6>
           <p>Find your next home while staying fit in Accra,Ghana</p>
         </div>
         </div>
@@ -1460,7 +1446,7 @@
             <div clas="home-icon">
             <img src="img/solar-energy.png" class="img-fluid" alt="">
           </div>
-          <h6>Solar Panels</h6>
+          <h6 class="stop">Solar Panels</h6>
           <p>Find your next home while staying fit in Accra,Ghana</p>
         </div>
         </div>
@@ -1472,14 +1458,204 @@
 <!-- popular searches -->
      <div class="container">
       <div class="section-header text-center pb-5 ">
-        <h4 class="section-h">Popular Search</h4>
+        <h4 class="section-h stop">Popular Search</h4>
         <p>What People Are Most looking For</p>
       </div>
          <div class="row">
-          <div class="col-md-3">1</div>
-          <div class="col-md-3">2</div>
-          <div class="col-md-3">3</div>
-          <div class="col-md-3">4</div>
+          <div class="col-md-3 col-lg-3"><h6 style="font-weight: bold;" class="stop">Residential Properties for Rent</h6>
+            <ul>
+              <li class="el">
+                <div class="popular_image"><img src="img/2406_thumbnail.jpg"></div>
+                <div class="popular_details">
+                  <p class="pl">Luxury 5 bedroom</p>
+                  <span class="popular_price">$550,000 per Month</span>
+                  <span class="popular_views">21 views</span>
+                </div> 
+              </li>
+              <li class="el">
+                <div class="popular_image"><img src="img/2406_thumbnail.jpg"></div>
+                <div class="popular_details">
+                  <p class="pl">Luxury 5 bedroom</p>
+                  <span class="popular_price">$550,000 per Month</span>
+                  <span class="popular_views">21 views</span>
+                </div>
+              </li>
+              <li class="el">
+                <div class="popular_image"><img src="img/2406_thumbnail.jpg"></div>
+                <div class="popular_details">
+                  <p class="pl">Luxury 5 bedroom</p>
+                  <span class="popular_price">$550,000 per Month</span>
+                  <span class="popular_views">21 views</span>
+                </div>
+              </li>
+              <li class="el">
+                <div class="popular_image"><img src="img/2406_thumbnail.jpg"></div>
+                <div class="popular_details">
+                  <p class="pl">Luxury 5 bedroom</p>
+                  <span class="popular_price">$550,000 per Month</span>
+                  <span class="popular_views">21 views</span>
+                </div>
+              </li>
+              <li class="el">
+                <div class="popular_image"><img src="img/2406_thumbnail.jpg"></div>
+                <div class="popular_details">
+                  <p class="pl">Luxury 5 bedroom</p>
+                  <span class="popular_price">$550,000 per Month</span>
+                  <span class="popular_views">21 views</span>
+                </div>
+              </li>
+              <li class="el">
+                <div class="popular_image"><img src="img/2406_thumbnail.jpg"></div>
+                <div class="popular_details">
+                  <p class="pl">Luxury 5 bedroom</p>
+                  <span class="popular_price">$550,000 per Month</span>
+                  <span class="popular_views">21 views</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3"><h6 style="font-weight: bold;" class="stop">Residential Properties for Sale</h6>
+            <ul>
+              <li class="el">
+                <div class="popular_image"><img src="img/2406_thumbnail.jpg"></div>
+                <div class="popular_details">
+                  <p class="pl">Luxury 5 bedroom</p>
+                  <span class="popular_price">$550,000 per Month</span>
+                  <span class="popular_views">21 views</span>
+                </div> 
+              </li>
+              <li class="el">
+                <div class="popular_image"><img src="img/2406_thumbnail.jpg"></div>
+                <div class="popular_details">
+                  <p class="pl">Luxury 5 bedroom</p>
+                  <span class="popular_price">$550,000 per Month</span>
+                  <span class="popular_views">21 views</span>
+                </div>
+              </li>
+              <li class="el">
+                <div class="popular_image"><img src="img/2406_thumbnail.jpg"></div>
+                <div class="popular_details">
+                  <p class="pl">Luxury 5 bedroom</p>
+                  <span class="popular_price">$550,000 per Month</span>
+                  <span class="popular_views">21 views</span>
+                </div>
+              </li>
+              <li class="el">
+                <div class="popular_image"><img src="img/2406_thumbnail.jpg"></div>
+                <div class="popular_details">
+                  <p class="pl">Luxury 5 bedroom</p>
+                  <span class="popular_price">$550,000 per Month</span>
+                  <span class="popular_views">21 views</span>
+                </div>
+              </li>
+              <li class="el">
+                <div class="popular_image"><img src="img/2406_thumbnail.jpg"></div>
+                <div class="popular_details">
+                  <p class="pl">Luxury 5 bedroom</p>
+                  <span class="popular_price">$550,000 per Month</span>
+                  <span class="popular_views">21 views</span>
+                </div>
+              </li>
+              <li class="el">
+                <div class="popular_image"><img src="img/2406_thumbnail.jpg"></div>
+                <div class="popular_details">
+                  <p class="pl">Luxury 5 bedroom</p>
+                  <span class="popular_price">$550,000 per Month</span>
+                  <span class="popular_views">21 views</span>
+              </li>
+            </ul>
+          </div>
+        
+          <div class="col-md-3">
+            <h6 style="font-weight: bold;" class="stop">Commercial Properties for Rent</h6>
+            <ul>
+              <li class="el">
+                <div class="popular_image"><img src="img/2406_thumbnail.jpg"></div>
+                <div class="popular_details">
+                  <p class="pl">Luxury 5 bedroom</p>
+                  <span class="popular_price">$550,000 per Month</span>
+                  <span class="popular_views">21 views</span>
+                </div> 
+              </li>
+              <li class="el">
+                <div class="popular_image"><img src="img/2406_thumbnail.jpg"></div>
+                <div class="popular_details">
+                  <p class="pl">Luxury 5 bedroom</p>
+                  <span class="popular_price">$550,000 per Month</span>
+                  <span class="popular_views">21 views</span>
+                </div>
+              </li>
+              <li class="el">
+                <div class="popular_image"><img src="img/2406_thumbnail.jpg"></div>
+                <div class="popular_details">
+                  <p class="pl">Luxury 5 bedroom</p>
+                  <span class="popular_price">$550,000 per Month</span>
+                  <span class="popular_views">21 views</span>
+                </div>
+              </li>
+              <li class="el">
+                <div class="popular_image"><img src="img/2406_thumbnail.jpg"></div>
+                <div class="popular_details">
+                  <p class="pl">Luxury 5 bedroom</p>
+                  <span class="popular_price">$550,000 per Month</span>
+                  <span class="popular_views">21 views</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h6 style="font-weight: bold;" class="stop ">Commercial Properties for Sale</h6>
+            <!-- <ul>
+              <li class="el">
+                <div class="popular_image"><img src="img/2406_thumbnail.jpg"></div>
+                <div class="popular_details">
+                  <p class="pl">Luxury 5 bedroom</p>
+                  <span class="popular_price">$550,000 per Month</span>
+                  <span class="popular_views">21 views</span>
+                </div> 
+              </li>
+              <li class="el">
+                <div class="popular_image"><img src="img/2406_thumbnail.jpg"></div>
+                <div class="popular_details">
+                  <p class="pl">Luxury 5 bedroom</p>
+                  <span class="popular_price">$550,000 per Month</span>
+                  <span class="popular_views">21 views</span>
+                </div>
+              </li>
+              <li class="el">
+                <div class="popular_image"><img src="img/2406_thumbnail.jpg"></div>
+                <div class="popular_details">
+                  <p class="pl">Luxury 5 bedroom</p>
+                  <span class="popular_price">$550,000 per Month</span>
+                  <span class="popular_views">21 views</span>
+                </div>
+              </li>
+              <li class="el">
+                <div class="popular_image"><img src="img/2406_thumbnail.jpg"></div>
+                <div class="popular_details">
+                  <p class="pl">Luxury 5 bedroom</p>
+                  <span class="popular_price">$550,000 per Month</span>
+                  <span class="popular_views">21 views</span>
+                </div>
+              </li>
+              <li class="el">
+                <div class="popular_image"><img src="img/2406_thumbnail.jpg"></div>
+                <div class="popular_details">
+                  <p class="pl">Luxury 5 bedroom</p>
+                  <span class="popular_price">$550,000 per Month</span>
+                  <span class="popular_views">21 views</span>
+                </div>
+              </li>
+              <li class="el">
+                <div class="popular_image"><img src="img/2406_thumbnail.jpg"></div>
+                <div class="popular_details">
+                  <p class="pl">Luxury 5 bedroom</p>
+                  <span class="popular_price">$550,000 per Month</span>
+                  <span class="popular_views">21 views</span>
+              </li>
+            </ul> -->
+          </div>
+          </div>
+          </div>
         </div>
      </div>
 
@@ -1512,8 +1688,8 @@
               <div class="row">
                 <div class="col-sm-3"> 
                   <div class="sub_sec">
-                    <h4>The Number One Site For Apartment Rentals In Accra Ghana</h4>
-                    <p>Enjoy a pleasant life in the wealthiest country in Africa by owning your own home. It has never been so easy, just fill out this one-time form and we can get started for you.s</p>
+                    <h4 style="font-weight: bold;" class="stop">The Number One Site For Apartment Rentals In Accra Ghana</h4>
+                    <p class="stop">Enjoy a pleasant life in the wealthiest country in Africa by owning your own home. It has never been so easy, just fill out this one-time form and we can get started for you.s</p>
                     <div class="input-group">
                     <input type="text" class="form-control first" name="user_email" placeholder="Enter Email Address">
                     <span class="input-group-btn">
@@ -1576,10 +1752,10 @@
     </footer>
     <!-- Closed Footer -->
 
-      <script type="module">
+      <!-- <script type="module">
         import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
       
         const swiper = new Swiper(...)
-      </script>
+      </script> -->
 </body>
 </html>
